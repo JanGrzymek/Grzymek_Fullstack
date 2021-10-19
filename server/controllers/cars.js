@@ -1,6 +1,5 @@
 const asyncHandler = require('express-async-handler');
 const { getCars2, changeStatusCar2, deleteCar2, postCar2 } = require('../model/cars');
-const { restart } = require('nodemon');
 
 const getCars = asyncHandler(async (req, res) => {
   const result = await getCars2();
